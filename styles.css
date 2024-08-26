@@ -40,12 +40,11 @@ body{
 }
 
 nav {
-  width:auto;
+  width: 100%;
   text-align: center;
   justify-content: space-between;
   margin-top: 16px;
   margin-bottom: 16px;
-
   display: flex;
 
 }
@@ -55,16 +54,44 @@ nav {
   color: white;
   text-decoration: none;  
   text-align: left;
-  flex-grow: 1;
+  flex-basis: 33.33%;
 }
 
 .p1{
-  flex-grow: 1;
+  flex-basis: 33.33%;
   text-align: center;
 }
 
 .p2 {
-  flex-grow: 1;
+  flex-basis: 33.33%;
   text-align: left;
+}
+
+
+.about-section{
+  width: auto;
+  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+h1 {
+  font-size: 10px;
+  color: rgba(177, 171, 171, 0.9);
+  font-weight: 400;
+}
+
+.about-header {
+  grid-column: 1 / 4; 
+  padding-left: 12px;
+}
+
+.team-header{
+  text-align: left;
+  grid-column: 6 / 7; 
+}
+
+.description-header{
+  grid-column: 9 / 11;
 }
 
